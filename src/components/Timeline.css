@@ -1,0 +1,115 @@
+.timeline__header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.timeline {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.timeline__item {
+  display: flex;
+  gap: 32px;
+}
+
+.timeline__marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 20px;
+}
+
+.timeline__dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 3px solid var(--slate-300);
+  background: var(--white);
+  flex-shrink: 0;
+  z-index: 1;
+  transition: all var(--transition-base);
+}
+
+.timeline__item--complete .timeline__dot {
+  border-color: var(--teal-500);
+  background: var(--teal-500);
+}
+
+.timeline__item--current .timeline__dot {
+  border-color: var(--indigo-500);
+  background: var(--indigo-500);
+  box-shadow: 0 0 0 6px rgba(99, 102, 241, 0.15);
+}
+
+.timeline__connector {
+  width: 2px;
+  flex: 1;
+  background: var(--slate-200);
+  min-height: 40px;
+}
+
+.timeline__item--complete .timeline__connector {
+  background: var(--teal-300);
+}
+
+.timeline__content {
+  padding-bottom: 48px;
+  padding-top: 0;
+}
+
+.timeline__year {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--indigo-500);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.timeline__title {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--slate-900);
+  margin-bottom: 8px;
+}
+
+.timeline__desc {
+  font-size: 15px;
+  color: var(--slate-500);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.timeline__badge {
+  display: inline-flex;
+  padding: 4px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--indigo-50);
+  color: var(--indigo-600);
+  border: 1px solid var(--indigo-200);
+  border-radius: var(--radius-full);
+}
+
+.timeline__badge--complete {
+  background: var(--teal-50);
+  color: var(--teal-600);
+  border-color: var(--teal-200);
+}
+
+@media (max-width: 600px) {
+  .timeline__item {
+    gap: 20px;
+  }
+
+  .timeline__content {
+    padding-bottom: 36px;
+  }
+}

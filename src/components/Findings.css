@@ -1,0 +1,99 @@
+.findings__header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.findings__header .section-label::before {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.findings__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.findings__card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  text-align: center;
+  transition: all var(--transition-base);
+}
+
+.findings__card:hover {
+  background: rgba(255, 255, 255, 0.14);
+  transform: translateY(-6px);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.findings__card-icon {
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+}
+
+.findings__card--indigo .findings__card-icon {
+  background: rgba(99, 102, 241, 0.2);
+  color: var(--indigo-300);
+}
+.findings__card--rose .findings__card-icon {
+  background: rgba(251, 113, 133, 0.2);
+  color: var(--rose-400);
+}
+.findings__card--teal .findings__card-icon {
+  background: rgba(45, 212, 191, 0.2);
+  color: var(--teal-400);
+}
+.findings__card--amber .findings__card-icon {
+  background: rgba(251, 191, 36, 0.2);
+  color: var(--amber-400);
+}
+
+.findings__card-metric {
+  font-family: var(--font-serif);
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.findings__card-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 12px;
+}
+
+.findings__card-desc {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .findings__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .findings__grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .findings__card-metric {
+    font-size: 40px;
+  }
+}
