@@ -1,0 +1,4 @@
+- doctorate-portfolio is a public React + Vite single-page academic portfolio for doctorate research in adolescent mental health care.
+- State: a single 'Initial commit' (2026-03-31) plus the monthly maintenance commit; no component code changed this month.
+- Reviewed October 2026: README, tree and history read; the README's external links (React compiler docs, Oxc, SWC, typescript-eslint) all return 200. Package version bumped for the release.
+- Known gaps: README.md is still the stock 'React + Vite' template and does not describe the project; `index.html` still has the placeholder title 'Dr. [Your Name]'; no LICENSE; no tests or CI.
