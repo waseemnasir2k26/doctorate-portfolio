@@ -1,28 +1,22 @@
-# React + Vite
+# Researcher Portfolio (demo)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A one-page academic portfolio template: hero, about, methodology, findings, impact, publications, timeline, project and contact sections.
 
-## Status
+**Live:** https://doctorate-portfolio.vercel.app
 
-Last reviewed: October 2026 · release v2026.10
+All names, research topics and the contact address in this repo are placeholders (the contact link is `your.email@university.edu`). Replace them with real details before using it for a real person.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+React with Vite. Section components live in `src/components/`, each with its own CSS file.
 
-## React Compiler
+## Run it
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+npm run build
+npm run lint
+```
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-
-## Work with SkynetLabs
-
-Built by [Waseem Nasir](https://www.skynetjoe.com/?utm_source=github&utm_medium=readme&utm_campaign=doctorate-portfolio) at SkynetLabs — n8n + AI automation for small businesses.
-
-- Hire on Fiverr: https://www.fiverr.com/agencies/skynetjoellc
-- Hire on Upwork: https://www.upwork.com/freelancers/muhammadwaseemnasir
-- Book a free call: https://calendly.com/skynetlabs/schedule-a-free-consultation
+Demo built by SkynetLabs.
